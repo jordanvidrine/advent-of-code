@@ -5,7 +5,7 @@ let answer1 = fs
   .split(/\r?\n/)
   .reduce((previousValue, item) => {
     let assignments = item.split(",");
-    let elf1 = /(^\d*)-(\d*$)/g.exec(assignments[0].trim());
+    let elf1 = /(^\d*)-(\d*$)/g.exec(assignments[0]);
     let elf2 = /(^\d*)-(\d*$)/g.exec(assignments[1]);
     let a, b, c, d;
 
@@ -27,7 +27,7 @@ let answer2 = fs
   .split(/\r?\n/)
   .reduce((previousValue, item) => {
     let assignments = item.split(",");
-    let elf1 = /(^\d*)-(\d*$)/g.exec(assignments[0].trim());
+    let elf1 = /(^\d*)-(\d*$)/g.exec(assignments[0]);
     let elf2 = /(^\d*)-(\d*$)/g.exec(assignments[1]);
     let a, b, c, d;
 
